@@ -1,0 +1,4 @@
+<apex:page >
+<h2>An error occurred processing your request:{!$CurrentPage.parameters.errMsg}.</h2><br/>
+<h2>Contact your Salesforce system administrator !!!!</h2>
+</apex:page>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SLIM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SLIMs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- SLIMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount(Rptg) --></label>
+        <name>Amount_Rptg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Total Margin --></label>
+        <name>Calculated_Total_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Source --></label>
+        <name>Campaign_Source__c</name>
+        <relationshipLabel><!-- SLIMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Revenue --></label>
+        <name>Expected_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Category --></label>
+        <name>Forecast_Category__c</name>
+        <picklistValues>
+            <masterLabel>Best Case</masterLabel>
+            <translation><!-- Best Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commit</masterLabel>
+            <translation><!-- Commit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omitted</masterLabel>
+            <translation><!-- Omitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipe Line</masterLabel>
+            <translation><!-- Pipe Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select</masterLabel>
+            <translation><!-- Select --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Installment Amount --></label>
+        <name>Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Comment --></label>
+        <name>Installment_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Margin --></label>
+        <name>Installment_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Name --></label>
+        <name>Installment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Number --></label>
+        <name>Installment_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Period --></label>
+        <name>Installment_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNew --></label>
+        <name>IsNew__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line Description --></label>
+        <name>Line_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Installments --></label>
+        <name>Number_of_Installments__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLIS Id --></label>
+        <name>OLIS_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLIS Installment Id --></label>
+        <name>OLIS_Installment_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLIS Total Product Margin --></label>
+        <name>OLIS_Total_Product_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLIS Unit Margin --></label>
+        <name>OLIS_Unit_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLI Unit Margin --></label>
+        <name>OLI_Unit_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Line Item Id --></label>
+        <name>Opportunity_Line_Item_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+        <relationshipLabel><!-- SLIMs (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Quantity --></label>
+        <name>Opportunity_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- SLIMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override --></label>
+        <name>Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private --></label>
+        <name>Private__c</name>
+    </fields>
+    <fields>
+        <label><!-- Probability --></label>
+        <name>Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- SLIMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OLI Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reportable --></label>
+        <name>Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLIMType --></label>
+        <name>SLIMType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Price --></label>
+        <name>Sales_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Date --></label>
+        <name>Schedule_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Name --></label>
+        <name>Schedule_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Type --></label>
+        <name>Schedule_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>Total_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Product Margin --></label>
+        <name>Total_Product_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Closed/Lost</masterLabel>
+            <translation><!-- Closed/Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed/Won</masterLabel>
+            <translation><!-- Closed/Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select</masterLabel>
+            <translation><!-- Select --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Unit Margin --></label>
+        <name>Unit_Margin__c</name>
+    </fields>
+    <layouts>
+        <layout>SLIM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Details --></label>
+            <section>Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Line Item --></label>
+            <section>Opportunity Line Item</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Line Item Schedule --></label>
+            <section>Opportunity Line Item Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Schedule Installments Detail --></label>
+            <section>Schedule Installments Detail</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

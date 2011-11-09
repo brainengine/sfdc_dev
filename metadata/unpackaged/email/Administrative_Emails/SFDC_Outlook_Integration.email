@@ -1,0 +1,312 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P style="LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri"><FONT face=Calibri>{!Receiving_User.FirstName}:<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></SPAN></P>
+<P style="LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: 'Arial','sans-serif'; COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'">&nbsp;<o:p></o:p></SPAN></P>
+<P style="LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri"><FONT face=Calibri>Welcome to Salesforce.com! Please use the following&nbsp;“Integrating BigMachines with SFDC” instructions for setting up the linkage between SFDC and Outlook.&nbsp; This feature allows you to associate emails with SFDC opportunities, helping to centralize client notes and communications with the sales opportunity.<o:p></o:p></FONT></SPAN></P>
+<P style="LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri"><FONT face=Calibri>If you have any questions or need support with these features please contact </FONT><A href="mailto:krystal.carter@iongeo.com"><SPAN style="COLOR: blue"><FONT face=Calibri>Krystal Carter</FONT></SPAN></A><FONT face=Calibri>.</FONT></SPAN><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; COLOR: black; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'"><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><o:p><FONT face=Calibri>&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><o:p><FONT face=Calibri>&nbsp;
+<TABLE style="MARGIN: auto auto auto -0.05in; WIDTH: 97%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="97%">
+<TBODY>
+<TR style="PAGE-BREAK-INSIDE: avoid; HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 100%; PADDING-RIGHT: 5.75pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="100%" colSpan=2>
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=sectionbreaktext><SPAN style="COLOR: #333333"><STRONG><FONT size=6><FONT face="Arial Black">Integrating SFDC with Outlook<o:p></o:p></FONT></FONT></STRONG></SPAN></P></TD></TR>
+<TR style="PAGE-BREAK-INSIDE: avoid; HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 100%; PADDING-RIGHT: 5.75pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="100%" colSpan=2>
+<P style="TEXT-INDENT: 0in; MARGIN: 0in 0in 0pt 22.8pt" class=MsoListNumber4><FONT face=Arial>SFDC’s Outlook Edition provides features:<o:p></o:p></FONT></P>
+<P style="MARGIN: 0in 0in 0pt 40.8pt" class=MsoListNumber4><FONT face=Arial>1.</FONT><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp; </SPAN><FONT face=Arial>Associates outgoing MS Outlook email with any SFDC Opportunity or Contact.<o:p></o:p></FONT></P>
+<P style="MARGIN: 0in 0in 0pt 40.8pt; mso-line-height-alt: 8.95pt" class=MsoListNumber4><FONT face=Arial>2.</FONT><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp; </SPAN><FONT face=Arial>Associates inbound MS Outlook email with any SFDC Opportunity or Contact.<o:p></o:p></FONT></P>
+<P style="MARGIN: 0in 0in 0pt 40.8pt; mso-line-height-alt: 8.95pt" class=MsoListNumber4><o:p><FONT face=Arial>&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 0pt 40.8pt; mso-line-height-alt: 8.95pt" class=MsoListNumber4><o:p><FONT face=Arial>&nbsp;</FONT></o:p></P></TD></TR>
+<TR style="HEIGHT: 1in; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0.05in" class=subsectionbreaktext><SPAN style="FONT-SIZE: 14pt"><STRONG><FONT face=Arial>Configuring Explorer’s Trusted Sites<o:p></o:p></FONT></STRONG></SPAN></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Open Microsoft Internet Explorer.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Select <B>Tools/Internet Options </B>from the menu bar. <o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>3<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Select the <B>Security</B> tab.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 4">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>4<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Click on the <B>Trusted Sites </B>icon and then the <B>[Sites] </B>button.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 5">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>5<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><FONT face=Arial>Add the following entries as trusted sites:<o:p></o:p></FONT></P>
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><A href="https://*.bigmachines.com/"><FONT color=#0000ff face=Arial>https://*.bigmachines.com</FONT></A><o:p></o:p></P>
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><A href="http://*.bigmachines.com/"><FONT color=#0000ff face=Arial>http://*.bigmachines.com</FONT></A><o:p></o:p></P>
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><A href="https://*.salesforce.com/"><FONT color=#0000ff face=Arial>https://*.salesforce.com</FONT></A><o:p></o:p></P>
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><A href="http://*salesforce.com/"><FONT color=#0000ff face=Arial>http://*salesforce.com</FONT></A><o:p></o:p></P>
+<P style="MARGIN: 3pt 0in 3pt 3.95pt" class=tabletextChar2><SPAN style="FONT-SIZE: 1pt"><o:p><FONT face=Arial>&nbsp;</FONT></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 6; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>6<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Click on the <B>[Close]</B> and then <B>[OK]</B> button.<o:p></o:p></FONT></P></TD></TR></TBODY></TABLE>
+<P style="MARGIN: 3pt 0in 3pt 1.4pt" class=MsoNormal><o:p><FONT face=Arial></FONT></o:p></P></TD></TR>
+<TR style="HEIGHT: 1in; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0.05in" class=subsectionbreaktext><A name=_Toc212375603><SPAN style="FONT-SIZE: 14pt"><STRONG><FONT face=Arial>Installing Outlook Edition</FONT></STRONG></SPAN></A><o:p></o:p></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<P style="MARGIN: 3pt 0in 3pt 1.4pt" class=MsoNormal>To download and install Outlook Edition:<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Shut down Microsoft® Outlook® before beginning the installation.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click Setup | Email | Outlook Edition.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>3<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click Install Now.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 4">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>4<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click Yes when prompted to install and run the plug-in.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 5">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>5<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Follow the prompts in the setup wizard to complete the installation.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 6">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>6<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Start Outlook to begin using the new features.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>7<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Outlook Edition prompts you for your SFDC username and password the first time you attempt to add a message to SFDC.<o:p></o:p></FONT></P></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="HEIGHT: 1in; mso-yfti-irow: 4; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0.05in" class=subsectionbreaktext><A name=_Toc212375604><SPAN style="FONT-SIZE: 14pt"><STRONG><FONT face=Arial>Adding Outbound Email to SFDC</FONT></STRONG></SPAN></A><o:p></o:p></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>Outlook Edition enables you to send emails from Microsoft Outlook and log them as tasks in SFDC through these steps:<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>In Outlook, click New to compose a new email.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Compose your email<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>3<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Add recipients by entering email addresses or using the Outlook Address Book or SFDC Address Book.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 4">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>4<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click the Send and Add to SFDC button.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 5">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>5<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Associate the email with a contact, lead, or opportunity.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 6">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>6<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Optionally, select the Edit Message tab to change the text of the message that is added to SFDC (any changes you make do not affect the text that your recipients receive in the email).<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 7">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>7<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Click the Send and Add to SFDC button in the dialog.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 8; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>8<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>The email is added as a completed task in the Activity History related list of the associated records (any email attachments are not added as part of the task).<o:p></o:p></FONT></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><B><SPAN style="FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 11pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR style="PAGE-BREAK-BEFORE: always; mso-special-character: line-break" clear=all></SPAN></B></P>
+<P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal>
+<TABLE style="MARGIN: auto auto auto -0.05in; WIDTH: 97%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="97%">
+<TBODY>
+<TR style="HEIGHT: 1in; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0.05in" class=subsectionbreaktext><A name=_Toc212375605><SPAN style="FONT-SIZE: 14pt"><STRONG><FONT face=Arial>Adding a Sent or Received Email to SFDC</FONT></STRONG></SPAN></A><SPAN style="FONT-SIZE: 14pt"><o:p></o:p></SPAN></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>Emails that you have sent or received in Microsoft Outlook can be added to SFDC with these steps:<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>In Microsoft Outlook, select the email that you want to add to SFDC. Alternatively, you can double-click the email to open it in its own window.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click the Add to SFDC button.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>3<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Associate the email with a contact, lead, or opportunity.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 4">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>4<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Optionally, select the Edit Message tab to change the text of the message that is added to SFDC (any changes you make do not affect the text that the email stored in Outlook).<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 5">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>5<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click the Add to SFDC button in the dialog.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 6; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>6<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>The email is added as a completed task in the Activity History related list of the associated records (any email attachments are not added as part of the task).<o:p></o:p></FONT></P></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="HEIGHT: 1in; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0.05in" class=subsectionbreaktext><A name=_Toc212375606><SPAN style="FONT-SIZE: 14pt"><STRONG><FONT face=Arial>Associating Emails with Contacts or Opportunities</FONT></STRONG></SPAN></A><SPAN style="FONT-SIZE: 14pt"><o:p></o:p></SPAN></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 1in; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>You can associate Microsoft Outlook emails with SFDC contacts, leads, and opportunities with these steps:<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Compose a new outbound email or select a sent or received email.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>In the Contacts &amp; Leads tab of the dialog, select the contact or lead to associate with the email, or use the search box to find a specific contact or lead (if you want to associate the email only with an opportunity, skip this step)<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<OL style="MARGIN-TOP: 0in" type=a>
+<LI style="MARGIN: 3pt 0in; mso-list: l1 level1 lfo1; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">To deselect a contact or lead, right-click on it and choose Deselect. <o:p></o:p></SPAN></LI>
+<LI style="MARGIN: 3pt 0in; mso-list: l1 level1 lfo1; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">For new outbound emails - Outlook Edition matches up to 25 email addresses in the To, Cc, and Bcc fields with the Email field in contacts and leads <o:p></o:p></SPAN></LI>
+<LI style="MARGIN: 3pt 0in; mso-list: l1 level1 lfo1; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">For received emails - Outlook Edition matches up to 25 email addresses in the From field with the Email field in contacts and leads <o:p></o:p></SPAN></LI>
+<LI style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt; mso-list: l1 level1 lfo1; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">For sent emails (such as in the Outlook Sent Items folder) - Outlook Edition matches up to 25 email addresses in the To, Cc, and Bcc fields with the Email field in contacts and leads. </SPAN><SPAN style="FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'"><o:p></o:p></SPAN></LI></OL></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 3">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>3<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>Click the Opportunities tab to associate the email with an opportunity<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<OL style="MARGIN-TOP: 0in" type=a>
+<LI style="MARGIN: 3pt 0in; mso-list: l0 level1 lfo2; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">If you previously selected a contact, the dialog displays all open opportunities associated with the account of the contact <o:p></o:p></SPAN></LI>
+<LI style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt; mso-list: l0 level1 lfo2; tab-stops: list .5in" class=MsoNormal><SPAN style="mso-fareast-font-family: 'Times New Roman'">If you did not select a contact, the dialog displays only the search box. </SPAN><SPAN style="FONT-FAMILY: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'"><o:p></o:p></SPAN></LI></OL></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 4">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>4<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>If the search results return multiple matches and you are not sure which to select, click the View link next to a record to display the printable view of the record.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 5">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>5<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>If the list does not show the opportunity you want, enter all or part of the Opportunity Name in the search box.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 6">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>6<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextChar2><FONT face=Arial>Click Search.<o:p></o:p></FONT></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 7">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>7<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>To switch between viewing opportunities or cases, click View Opportunities or View Cases.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 8">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>8<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Select an opportunity from the list. To deselect an opportunity, right-click on it and choose Deselect..<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 9">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>9<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Note that the associated opportunity is not required to be linked to the selected contact. The two records can be completely unrelated.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 10; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 10.38%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="10%">
+<P style="MARGIN: 3pt -5.35pt 3pt -2.45pt; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>10<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 89.62%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="89%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Continue adding the email to SFDC.<o:p></o:p></P></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="HEIGHT: 211.5pt; mso-yfti-irow: 2; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 27.62%; PADDING-RIGHT: 5.75pt; HEIGHT: 211.5pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="27%">
+<P style="MARGIN: 6pt 0.15in 6pt 0in" class=subsectionbreaktext><A name=_Toc212375608><STRONG><FONT face=Arial>Tracking Which Emails are Added to SFDC</FONT></STRONG></A><SPAN style="FONT-SIZE: 14pt"><o:p></o:p></SPAN></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 72.38%; PADDING-RIGHT: 5.75pt; HEIGHT: 211.5pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="72%">
+<P style="MARGIN: 3pt 0in" class=MsoNormal>Emails are added to SFDC can be tracked by adding a "SFDC" column to your Microsoft Outlook messages view. This column, similar to the standard Outlook "Importance" column, shows a check mark for every message that has been added to SFDC. Note that the check mark does not display if you have selected the Do not add a check mark to emails that are successfully entered into SFDC option in the Outlook Edition options dialog.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P>
+<P style="MARGIN: 3pt 0in" class=MsoNormal>To add this "SFDC" column, you need to customize your Outlook view via the View menu.&nbsp; Note that if you have not yet added any emails to SFDC, you will need to create the "SFDC" view manually.<o:p></o:p></P>
+<TABLE style="WIDTH: 99%; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in" class=MsoNormalTable border=0 cellSpacing=0 cellPadding=0 width="99%">
+<TBODY>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepheadingtext><STRONG><FONT face=Arial>Step<o:p></o:p></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in 3pt 3.95pt; mso-line-height-alt: 8.95pt" class=tabletextboldCharCharChar><STRONG><FONT face=Arial>Action<o:p></o:p></FONT></STRONG></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 1">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>1<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Click View | Arrange By | Current View.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR>
+<TR style="HEIGHT: 8.95pt; mso-yfti-irow: 2; mso-yfti-lastrow: yes">
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 11.78%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="11%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=tablestepnumberingtext><STRONG><FONT color=#000080><FONT face=Arial>2<o:p></o:p></FONT></FONT></STRONG></P></TD>
+<TD style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 88.22%; PADDING-RIGHT: 5.4pt; HEIGHT: 8.95pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" vAlign=top width="88%">
+<P style="MARGIN: 3pt 0in; mso-line-height-alt: 8.95pt" class=MsoNormal>Select SFDC Custom View from the list of views.<SPAN style="FONT-FAMILY: 'Arial','sans-serif'"><o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FONT></o:p></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><o:p><FONT face=Calibri>&nbsp;</FONT></o:p></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><FONT face=Calibri><STRONG>{!User.FirstName} {!User.LastName}</STRONG><BR>{!User.Title}<BR>{!User.Email}<BR>Office: {!User.Phone}<BR>Cell: {!User.MobilePhone}<o:p></o:p></FONT></P>
+<P>&nbsp;</P>]]></td>
+</tr>
+</table>

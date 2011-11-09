@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;IMG style=&quot;WIDTH: 191px; HEIGHT: 75px&quot; height=141 alt=&quot;&quot; src=&quot;https://na3.salesforce.com/servlet/servlet.FileDownload?file=[Reference to document with ID 01550000000IGUi could not be resolved. References to documents in user or org folders are not supported. Note that documents are not copied to sandbox.]&quot; width=404 align=left border=0&gt;</body>
+    <pageComponentType>imageOrNote</pageComponentType>
+</HomePageComponent>

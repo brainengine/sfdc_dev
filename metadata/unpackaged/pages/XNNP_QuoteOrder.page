@@ -1,0 +1,1410 @@
+<apex:page standardController="QuoteOrder__c" extensions="XNNC_QuoteOrder" sidebar="false">
+<apex:form >
+	<p>
+		<apex:commandButton action="{!save}" value="Save" />
+		<apex:commandButton action="{!cancel}" value="Cancel" />
+		<hr />
+		<apex:pageMessages />
+	</p>
+
+ <div style="margin:0px;margin-left:0.0in;">
+ <span style="font-size:4pt;font-family:Arial;">
+ </span>
+</div> 
+<table cellpadding="0" cellspacing="0" style="width:100%;margin-left:0.0in"><tr><td rowspan="2" style="border-top:solid 0px black;border-left:solid 0px black;width:17.3507%;">  <div>
+    <span style="font-style:italic;font-weight:bold;color:red;font-size:18pt;font-family:Arial Black;">SENSOR
+    </span>
+   </div>
+  </td><td colspan="2" rowspan="2" style="border-top:solid 0px black;width:28.5938%;">  <div style="text-align: right;">
+    <span style="font-style:italic;font-weight:bold;font-size:12pt;font-family:Arial;">Quote / Order Status Database
+    </span>
+   </div>
+  </td></tr><tr><td rowspan="3" style="border-top:solid 0px black;width:30.1806%;">  <div>
+    <span style="font-weight:bold;color:blue;font-size:9pt;font-family:Arial;">
+    </span>
+   </div>  <div style="margin:0px;margin-left:0.0in;">
+    <img height="62px" src="https://na2.salesforce.com/sfc/servlet.shepherd/version/download/06840000000MjGfAAK?asPdf=false&amp;" width="87px"/>
+   </div>
+  </td></tr><tr><td colspan="3" rowspan="2" style="border-top:solid 3px black;width:17.3507%;">  <div style="text-align: center;">
+    <span style="font-weight:bold;color:blue;font-size:9pt;font-family:Arial;">
+    </span>
+   </div> <div style="text-align: center;">
+    <span style="font-weight:bold;color:blue;font-size:14pt;font-family:Arial;">
+    </span><span style="font-weight:bold;color:blue;font-size:14pt;font-family:Arial;">
+    </span><span style="font-size:14pt;font-family:Arial;">
+    </span>
+   </div>
+  </td></tr><tr/><tr><td colspan="3" style="border-top:solid 0px black;width:17.3507%;">  <div style="text-align: right;">
+    <span style="font-style:italic;font-weight:bold;font-size:9pt;font-family:Arial;">
+    </span>
+   </div> <div style="text-align: right;">
+    <span style="font-style:italic;font-weight:bold;font-size:9pt;font-family:Arial;">
+    </span>
+   </div>
+  </td><td style="border-top:solid 0px black;width:23.7604%;">  <div style="text-align: right;">
+    <span style="font-size:4pt;font-family:Arial;">
+    </span><input style="width:1.5750in;" type="button" value="Edit"/><span style="font-style:italic;font-weight:bold;font-size:18pt;font-family:Arial Black;">
+    </span>
+   </div>
+  </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+ <span style="font-size:4pt;font-family:Arial;">
+ </span>
+</div> 
+<table cellpadding="0" cellspacing="0" style="width:100%;margin-left:0.0in"><tr><td style="border-top:solid 0px black;border-bottom:solid 2px black;width:47.8854%;">  <div style="margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;color:blue;font-family:Arial;">Sales
+    </span>
+   </div>
+  </td><td style="border-top:solid 0px black;border-right:solid 0px black;border-bottom:solid 2px black;width:52.1111%;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;font-size:8pt;font-family:Arial;">(Black: free entry, 
+    </span><span style="font-weight:bold;color:gray;font-size:8pt;font-family:Arial;">Gray
+    </span><span style="font-weight:bold;font-size:8pt;font-family:Arial;">: keyword entry)
+    </span>
+   </div>
+  </td></tr></table>  
+<div><div onclick="var sec=document.getElementById('uc0coxwqzaau');if(sec.style.display=='none'){sec.style.display='block'}else{sec.style.display='none'}" style="padding-left:5px;border-left:solid 5px teal;border-bottom:solid 1px teal;cursor:pointer;cursor:hand;">
+   Sales:
+  </div><div id="uc0coxwqzaau" style="display:none;"><code event="defaultvalue"><formula>
+   "[Sales]"
+  </formula></code> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-family:Arial;">
+  </span>
+ </div>  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-size:8pt;font-family:Arial;">
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Mail notice &amp; Close"/><span style="font-size:8pt;font-family:Arial;"> 
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Close"/><span style="font-size:8pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Author
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Naam__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Creation Date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Sales_Date__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-family:Arial;">Client Info:
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Customer:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Customer__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Contact
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Contact__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Region:
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Salesperson__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;">Country of Origin
+  </span><span style="color:gray;font-size:9pt;font-family:Arial;">:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.From__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Client Ref. No.:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ClientOrderNo__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Tel.:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Tel__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Fax
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Fax__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-family:Arial;">Sensor Info:
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Week:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Week__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Rev. No.:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AmendNo__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Rev. Descr.: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Rev_Descr__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Terms
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Terms__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;">Probability:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Probability__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> [%]
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> SP:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SP__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">SPA:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SPA__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">SPN:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SPN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">JAQ:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SPJ__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> SN:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">SNUS:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SNA__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">SNN:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SNN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">JA:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SNJ__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> CCR: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.CCR__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> REP: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.REP__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Partial: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.IOQuoteNo__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Attechements:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AttachementsXNRTF__c}"/>
+     </span><span style="font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Product(s):
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Product__c}"/>
+  </span><span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Seismic enquiry:
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.SeismicEnquiry__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Short descr.:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.DescriptionShort__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;"> <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Full description:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;"> <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.DescriptionXNRTF__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Comments:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.CommentsXNRTF__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div>
+<br/></div></div> 
+<table cellpadding="0" cellspacing="0" style="width:100%;margin-left:0.0in"><tr><td colspan="2" style="border-top:solid 0px black;border-right:solid 0px black;border-bottom:solid 2px black;width:49.9931%;">  <div style="margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;color:blue;font-family:Arial;">Planning
+    </span>
+   </div>
+  </td></tr></table> 
+<div><div onclick="var sec=document.getElementById('1uirl3skctmrv');if(sec.style.display=='none'){sec.style.display='block'}else{sec.style.display='none'}" style="padding-left:5px;border-left:solid 5px teal;border-bottom:solid 1px teal;cursor:pointer;cursor:hand;">
+   Planning
+  </div><div id="1uirl3skctmrv" style="display:none;"><code event="defaultvalue"><formula>
+   "[Planning]"
+  </formula></code> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-family:Arial;">
+  </span>
+ </div>  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-size:8pt;font-family:Arial;">
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Mail notice &amp; Close"/><span style="font-size:8pt;font-family:Arial;">
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Close"/><span style="font-weight:bold;color:fuchsia;font-size:8pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-family:Arial;"> 
+  </span><span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;">Manufacture in:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ManufactureIn__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Quote del. date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.PlanDate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Quote delivery
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoteDel__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Validity: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.PlanningValidity__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> [Days]
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Order delivery
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.OrderDel__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> [Week #]
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Workorder week
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.WorkOrderWeek__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> [Week #]
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Transfer Order#:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.TransOrdNr__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Comments:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.PlanningCommentsXNRTF__c}"/>
+     </span>
+    </div>
+   </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:silver;font-size:4pt;font-family:Arial;">
+  </span><span style="color:blue;font-size:9pt;font-family:Arial;">
+  </span>
+ </div>
+<br/></div></div> 
+<table cellpadding="0" cellspacing="0" style="width:100%;margin-left:0.0in"><tr><td colspan="2" style="border-top:solid 0px black;border-right:solid 0px black;border-bottom:solid 2px black;width:49.9931%;"> <div style="margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;color:blue;font-family:Arial;">Status (Sales)
+    </span>
+   </div>
+  </td></tr></table> 
+<div><div onclick="var sec=document.getElementById('t2sdp9k2z3fv');if(sec.style.display=='none'){sec.style.display='block'}else{sec.style.display='none'}" style="padding-left:5px;border-left:solid 5px teal;border-bottom:solid 1px teal;cursor:pointer;cursor:hand;">
+   Status (Sales)
+  </div><div id="t2sdp9k2z3fv" style="display:none;"><code event="defaultvalue"><formula>
+   "[Sales]"
+  </formula></code> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-family:Arial;">
+  </span>
+ </div>  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:5.3146in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-size:8pt;font-family:Arial;">
+     </span><input style="width:1.5750in;" type="button" value="Save &amp; Close"/><span style="color:red;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.5750in;">  <div style="text-align: center;margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-size:7pt;font-family:Arial;">Dates will be updated
+     </span>
+    </div> <div style="text-align: center;margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-size:7pt;font-family:Arial;">automaticaly when document
+     </span>
+    </div> <div style="text-align: center;margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-size:7pt;font-family:Arial;">is saved or refreshed (F9)
+     </span>
+    </div>
+   </td></tr></table> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+  <span style="color:red;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:red;font-size:8pt;font-family:Arial;"> Exch. Rate(s): 
+  </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.ExchRateUS__c}"/>
+  </span><span style="color:red;font-size:8pt;font-family:Arial;">
+  </span><span style="color:red;font-size:8pt;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:red;font-family:Arial;">Please enter a currency !!
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Currency: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Currency__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Final Exchange Rate:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ExchRate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Currency: 
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Final Exchange Rate:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;"> 
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div>
+     <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-size:9pt;font-family:Arial;">Quote
+     </span><span style="font-size:9pt;font-family:Arial;"> 
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Exchange Rate:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div>
+     <span style="font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoExchangeRate__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-size:9pt;font-family:Arial;">
+     </span><span style="color:red;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoExchangeRateUS__c}"/>
+     </span><span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div>
+     <span style="color:red;font-size:9pt;font-family:Arial;">
+     </span><span style="color:red;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div>
+     <span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Sales price
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Cost price
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Margin
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">GPM
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Volume Basic Units:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_BU_S__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_BU_C__c}"/>
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Strings:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Str_S__c}"/>
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Str_C__c}"/>
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Industrials:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Ind_S__c}"/>
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Ind_C__c}"/>
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:9pt;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Testers:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Tst_S__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Tst_C__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Spares:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_sp_S__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Q_Sp_C__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Volume Basic Units:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Strings:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Industrials:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Testers:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Spares:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:4pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Totals:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.PriceQuoted__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuotedCostPrice__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:gray;font-size:1pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Done:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoYN__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoDate__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Revised : 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoRevisedDate__c}"/>
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div>
+     <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-family:Arial;">Acknowledgement
+     </span><span style="font-family:Arial;"> 
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Exchange Rate:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div>
+     <span style="font-family:Arial;">
+     </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AckExhangeRate__c}"/>
+     </span><span style="font-size:4pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="color:red;font-family:Arial;">
+     </span><span style="color:red;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AckExhangeRateUS__c}"/>
+     </span><span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div>
+     <span style="color:red;font-family:Arial;">
+     </span><span style="color:red;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div>
+     <span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Sales price
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Cost price
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Margin
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">GPM
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Volume Basic Units:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_BU_S__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_BU_C__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Strings:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Str_S__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Str_C__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Industrials:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Ind_S__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Ind_C__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Testers:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Tst_S__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Tst_C__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Spares:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Sp_S__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.A_Sp_C__c}"/>
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Volume Basic Units:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Strings:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Industrials:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Testers:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Spares:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-size:4pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr><tr><td style="border-top:solid 0px black;width:2.5590in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">Totals:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.PriceAcknld__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1806in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AcknldCostPrice__c}"/>
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:1.1813in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:0.7875in;"> <div style="text-align: right;margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table> <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:gray;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Done
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AckYN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AckDate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Revised:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.AckRevisedDate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-family:Arial;">Workorder
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Done:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.WorYN__c}"/>
+  </span><span style="color:gray;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Date:
+  </span><span style="color:gray;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.WorDate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Order cancelled: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.OrderCancelledYN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.CancelDate__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8896in;"><tr><td style="border-top:solid 0px black;width:1.0826in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Comments:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:5.8069in;"> <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.FolCommentXNRTF__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:fuchsia;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-family:Arial;">Partials
+  </span><span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> partial #1 partial #2 partial #3 partial #4
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> wk value wk value wk value wk value
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P1WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P1Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P2WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P2Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P3WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P3Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P4WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P4Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:fuchsia;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> partial #5 partial #6 partial #7 partial #8
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> wk value wk value wk value wk value
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P5WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P5Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P6WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P6Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P7WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P7Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P8WK__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"> 
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.P8Val__c}"/>
+  </span><span style="color:fuchsia;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:fuchsia;font-size:4pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-style:italic;font-weight:bold;text-decoration:underline;color:maroon;font-family:Arial;">Request for shipping quote
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:gray;font-size:9pt;font-family:Arial;"> Request:
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ShipQuoteYN__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Est. weight: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.EstGrossWeight__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> Kg Gross 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.EstNettWeight__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> Kg Nett
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Est. Number of packages: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.EstNoPacks__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Est. Packing Dimensions: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.EstPackDims__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> [cm]
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Destination [city &amp; post code]: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ReqShipDestination__c}"/>
+  </span><span style="color:blue;font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="color:blue;font-size:4pt;font-family:Arial;">
+  </span><span style="color:blue;font-size:4pt;font-family:Arial;">
+  </span>
+ </div>
+<br/></div></div> 
+<table cellpadding="0" cellspacing="0" style="width:100%;margin-left:0.0in"><tr><td colspan="2" style="border-top:solid 0px black;border-right:solid 0px black;border-bottom:solid 2px black;width:23.3819%;">  <div style="margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;color:blue;font-family:Arial;">Shipping
+    </span>
+   </div>
+  </td></tr></table>  
+<div><div onclick="var sec=document.getElementById('akndlpdhw11h');if(sec.style.display=='none'){sec.style.display='block'}else{sec.style.display='none'}" style="padding-left:5px;border-left:solid 5px teal;border-bottom:solid 1px teal;cursor:pointer;cursor:hand;">
+   Shipping
+  </div><div id="akndlpdhw11h" style="display:none;"><code event="defaultvalue"><formula>
+   "[Shipping]"
+  </formula></code> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;">
+  </span>
+ </div>  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;color:blue;font-size:8pt;">
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Mail notice &amp; Close"/><span style="font-size:8pt;">
+  </span><input style="width:1.5750in;" type="button" value="Save &amp; Close"/><span style="font-weight:bold;color:blue;font-size:8pt;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Forwarder
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Forwarder__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Packing
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Packing__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Cartage &amp; Forwarding
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.CartAndForwarding__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Freight
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Freight__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Insurance
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Insurance__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Documents:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Documents__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;">
+  </span>
+ </div> 
+ <table cellpadding="0" cellspacing="0" style="float:left;width:6.8736in;"><tr><td style="border-top:solid 0px black;width:2.1493in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Comments:
+     </span>
+    </div>
+   </td><td style="border-top:solid 0px black;width:4.7243in;">  <div style="margin:0px;margin-left:0.0in;">
+     <span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ShippingCommentsXNRTF__c}"/>
+     </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">
+     </span>
+    </div>
+   </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+  <span style="font-weight:bold;font-size:9pt;font-family:Arial;"> Invoice nr.
+  </span><span style="font-size:9pt;font-family:Arial;">: 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.Invoice__c}"/>
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-weight:bold;font-size:9pt;font-family:Arial;">Shipped date:
+  </span><span style="font-size:9pt;font-family:Arial;"> 
+  </span><span style="font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.ShippedDate__c}"/>
+  </span><span style="color:blue;font-size:9pt;font-family:Arial;">
+  </span><span style="font-size:4pt;font-family:Arial;">
+  </span>
+ </div>
+<br/></div></div> 
+<table cellpadding="0" cellspacing="0" style="float:left;width:6.8889in;"><tr><td style="border-top:solid 0px black;width:6.8889in;">  <div style="text-align: right;margin:0px;margin-left:0.0in;">
+    <span style="font-weight:bold;color:green;font-size:9pt;font-family:Arial;">-------------------------------------------------------------------------------------------------------------------------------------------- End of document
+    </span>
+   </div>
+  </td></tr></table>  <div style="margin:0px;margin-left:0.0in;">
+ <span style="font-weight:bold;color:red;font-size:4pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-family:Arial;">Hidden Fields
+ </span>
+</div>  <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> Last Editor: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.LastEditor__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> 
+ </span><span style="color:red;font-size:9pt;font-family:Arial;"><apex:inputField value="{!record.QuoteDelOld__c}"/>
+ </span><span style="font-weight:bold;color:red;font-size:9pt;font-family:Arial;">
+ </span>
+</div>  <div style="margin:0px;margin-left:1.0667in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.QuoYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.AckYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"> 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.WorYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.RevYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.DeaYN_Old__c}"/>
+ </span><span style="font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:1.0667in;">
+ <span style="font-size:8pt;font-family:Arial;"> 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.FolYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.OrderCancelledYN_Old__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:1.0667in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> ShipQuote: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.ShipQuoteYNDate__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.ShipQuoteYN_Old__c}"/>
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> Quote: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.QuoteProbability__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.QuoteDate__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.OrderDate__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;">Notifcation Groups (These groups are created from the ACL of this database in the Postopen event).
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> Sales group: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.SalesRole__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> Planning group: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.PlanningRole__c}"/>
+ </span><span style="color:red;font-size:8pt;font-family:Arial;">
+ </span>
+</div> <div style="margin:0px;margin-left:0.0in;">
+ <span style="color:red;font-size:8pt;font-family:Arial;"> Shipping group: 
+ </span><span style="color:red;font-size:8pt;font-family:Arial;"><apex:inputField value="{!record.ShippingRole__c}"/>
+ </span><span style="font-weight:bold;color:red;font-family:Arial;">
+ </span>
+</div>
+
+</apex:form>
+</apex:page>

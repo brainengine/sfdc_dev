@@ -1,0 +1,3 @@
+{!Opportunity.OwnerFullName} has requested that a quote be created for the {!Opportunity.Division__c} {!Opportunity.Name} Opportunity.
+
+Select the following link to access the opportunity: {!Opportunity.Link}

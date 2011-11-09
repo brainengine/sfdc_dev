@@ -1,0 +1,9 @@
+<messaging:emailTemplate subject="Testing" recipientType="Contact" >
+<messaging:HtmlEmailBody >
+<html>
+    <body>
+        <apex:image value="https://c.cs4.content.force.com/servlet/servlet.ImageServer?id=015P00000000eVH&oid=00DP00000004lc4&lastMod=1304406727000" id="Grove" />
+    </body>
+</html>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

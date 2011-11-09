@@ -1,0 +1,409 @@
+<apex:page standardController="Quote" extensions="QuoteExtension"  showHeader="false" renderAs="pdf">
+	<html>
+		<head>
+			<style> 
+				body {font-family: Arial Unicode MS;}
+				.companyName {
+				font-weight:bold;
+				font-size:30px;
+				color:red}  
+			</style>	
+			<style type="text/css">
+				 body { padding:0;margin:0; font-family: arial,helvetica; font-size:small;}
+				.style1
+				{
+				width: 100%;
+				}
+				.style2
+				{
+				width: 100%;
+				}
+				.style3
+				{
+				width: 15%;
+				color: #0000CC;
+				}
+				.style6
+				{
+				width: 5%;
+				}
+				.style7
+				{
+				width: 15%;
+				color: #0000CC;
+				}
+				.style8
+				{
+				width: 705px;
+				}
+				.style9
+				{
+				width: 705px;
+				height: 23px;
+				}
+				.style10
+				{
+				height: 23px;
+				}
+				.style11
+				{
+				width: 100%;
+				border: 1px solid Black;
+				}
+				.style12
+				{
+				width: 10%;
+				}
+				.style12a
+				{
+				width: 10%;
+				text-align: center;
+				}
+				.style13
+				{
+				width: 10%;
+				}
+				.style13a
+				{
+				width: 10%;
+				text-align: center;
+				}
+				.style14
+				{
+				width: 60%;
+				}
+				.style14a
+				{
+				width: 60%;
+				text-align: center;
+				}
+				.style15
+				{
+				width: 10%;
+				}
+				.style15a
+				{
+				width: 10%;
+				text-align: center;
+				}
+				.style16
+				{
+				width: 50%;
+				}
+				.style17
+				{
+				width: 35%;
+				}
+				.style18
+				{
+				width: 250px;
+				border: 3px solid #000000;
+				text-align:center;
+				font-size:medium;
+				color: #FF3300;
+				}
+				.style19
+				{
+				width: 250px;
+				color: Blue;
+				}
+				.style22
+				{
+				color: #0000CC;
+				}
+				.style23
+				{
+				width: 50%;
+				}
+				.style23a
+				{
+				width: 50%;
+				color: #0000CC;
+				}
+				.style23b
+				{
+				width: 50%;
+				padding-left: 25px;
+				}
+				.styleTitle
+				{
+				color: #0000CC;
+				}
+			</style>
+		</head>
+	<div style="text-align: right">
+		<apex:image url="{!URLFOR($Resource.proposalIMages, 'image016.png')}"/><br /><br /><br />
+	</div>
+		<div class="styleTitle"><center><strong><h1>PROPOSAL</h1></strong></center></div>
+        <table class="style1">
+            <tr>
+               
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td class="style3" align="right">
+                                Number :</td>
+                            <td class="style17">
+                                {!quote.Name}</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7" align="right">
+                                Bank :</td>
+                            <td class="style22">
+                                The Royal Bank of Scotland N.V. DUBAI</td>
+                        </tr>
+                        <tr>
+                            <td class="style3" align="right">
+                                Date :</td>
+                            <td class="style17">
+                                {!quote.CreatedDate}</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;</td>
+                            <td class="style22">
+                                Dubai</td>
+                        </tr>
+                        <tr>
+                            <td class="style3" align="right">
+                                Your Ref :</td>
+                            <td class="style17">
+                                {!quote.Opportunity.Client_Order_No__c}</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;</td>
+                            <td class="style22">
+                                U.A.E.</td>
+                        </tr>
+                        <tr>
+                            <td class="style3" align="right">
+                                Contact Name :</td>
+                            <td class="style17">
+                                {!quote.Opportunity.Owner.Name}</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7" align="right">
+                                A/c No :</td>
+                            <td>
+                                {!quote.Opportunity.Account.AccountNumber}</td>
+                        </tr>
+                        <tr>
+                            <td class="style3" align="right">
+                                Date Shipped :</td>
+                            <td class="style17">
+                                N/A</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7" align="right">
+                                SWIFT Code :</td>
+                            <td>
+                                {!quote.Opportunity.SWIFT_Code__c}</td>
+                        </tr>
+                        <tr>
+                            <td class="style3" align="right">
+                                Shipped via :</td>
+                            <td class="style17">
+                                N/A</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style3">
+                                &nbsp;</td>
+                            <td class="style17">
+                                &nbsp;</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7" align="right">
+                                Terms:</td>
+                            <td>
+                               {!quote.Opportunity.Terms__c}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td class="style23a">
+                                Sold To:</td>
+                            <td class="style23a">
+                                Shipped To:</td>
+                        </tr>
+                        <tr>
+                            <td class="style23b">
+                                {!quote.Opportunity.Account.Name}</td>
+                            <td class="style23b">
+								<div align="justify" style="width: 100px">							
+									<apex:outputText value="{!quote.Opportunity.Account.ShippingStreet}"
+									rendered="{!IF(quote.Opportunity.Account.ShippingStreet!=null, true, false)}" /><br/>
+									<apex:outputText value="{!quote.Opportunity.Account.ShippingCity}"
+									rendered="{!IF(quote.Opportunity.Account.ShippingCity!=null, true, false)}" />,&nbsp;
+									<apex:outputText value="{!quote.Opportunity.Account.ShippingState}"
+									rendered="{!IF(quote.Opportunity.Account.ShippingState!=null, true, false)}" />&nbsp;&nbsp;&nbsp;
+									<apex:outputText value="{!quote.Opportunity.Account.ShippingPostalCode} "
+									rendered="{!IF(quote.Opportunity.Account.ShippingPostalCode!=null, true, false)}" />
+								</div>
+							</td>
+                        </tr>
+                        <tr>
+                            <td class="style23b">
+								<div align="justify" style="width: 100px">							
+									<apex:outputText value="{!quote.Opportunity.Account.BillingStreet}"
+									rendered="{!IF(quote.Opportunity.Account.BillingStreet!=null, true, false)}" /><br/>
+									<apex:outputText value="{!quote.Opportunity.Account.BillingCity}"
+									rendered="{!IF(quote.Opportunity.Account.BillingCity!=null, true, false)}" />,&nbsp;
+									<apex:outputText value="{!quote.Opportunity.Account.BillingState}"
+									rendered="{!IF(quote.Opportunity.Account.BillingState!=null, true, false)}" />&nbsp;&nbsp;&nbsp;
+									<apex:outputText value="{!quote.Opportunity.Account.BillingPostalCode} "
+									rendered="{!IF(quote.Opportunity.Account.BillingPostalCode!=null, true, false)}" />
+								</div>
+							</td>
+                            <td >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style23b">
+                                &nbsp;</td>
+                            <td class="style23b">
+                                Attn: {!quote.Opportunity.Ship_To_Contact__r.Name}</td>
+                        </tr>
+                        <tr>
+                            <td class="style23b">
+                                Attn: {!quote.Opportunity.Primary_Contact__r.Name}</td>
+                            <td class="style23b">
+                                {!quote.Opportunity.Ship_To_Contact__r.Phone}</td>
+                        </tr>
+                        <tr>
+                            <td class="style23b">
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style11">
+                        <tr>
+                            <td class="style12a" style="border-style: none solid solid none; border-width: thin; border-color:Black">
+                                <strong>Item No.</strong></td>
+                            <td class="style13a" style="border-style: none solid solid none; border-width: thin; border-color:Black">
+                                <strong>Quantity</strong></td>
+                            <td class="style14a" style="border-style: none solid solid none; border-width: thin; border-color:Black">
+                                <strong>Part Number / Description</strong></td>
+                            <td class="style15a" style="border-style: none solid solid none; border-width: thin; border-color:Black">
+                                <strong>Unit Price USD</strong></td>
+                            <td class="style15a" style="border-style: none solid solid none; border-width: thin; border-color:Black">
+                                <strong>Total USD</strong></td>
+                        </tr>
+						<apex:repeat value="{!LineItems}" var="aLine" id="theList">
+						<tr>
+							<td class="style12">
+							{!aLine.index}</td>
+							<td class="style13">
+							{!aLine.lineItem.Quantity}</td>
+							<td class="style14">
+							{!aLine.lineItem.Description}</td>
+							<td class="style15">
+							{!aLine.lineItem.UnitPrice}</td>
+							<td class="style15">
+							{!aLine.lineItem.TotalPrice}</td>
+						</tr>
+						</apex:repeat>
+					
+						<tr>
+							<td class="style12">
+							
+							</td>
+							<td class="style13">
+							
+							</td>
+							<td class="style14">
+								<br/><br/>
+								Value of Goods<br/>
+								<strong>Estimated</strong> Packaging and Document Charges<br/><br/>
+								<strong>Estimated</strong> Ex Plant Delhi. India<br/>
+								<strong>Estimated</strong> Cartage and Forwarding Charges<br/><br/>
+								<strong>Estimated</strong> FOB International Container Depot (ICD) Delhi, Inda<br/><br/>
+							
+								<strong><u>DISPATCH</u></strong><br/>	
+								{!quote.Opportunity.Dispatch__c}<br/>
+								<strong>THE ABOVE DELIVERIES ARE BEST ESTIMATES AT THE TIME OF<br/>
+								QUOTATION. FINAL DELIVERIES ARE DEPENDANT UPON<br/>
+								WORKSHOP LOADINGS AT THE TIME THE ORDER IS PLACED.<br/><br/>
+								
+								Validity:</strong> {!quote.ExpirationDate} <br/><br/>
+							
+								<strong>Please ensure that nominated Freight Forwarder and <br/>
+								Consignee information is provided a minimum of 14 days <br/>
+								prior to the quoted dispatch.</strong><br/><br/>
+							
+								<strong><font color="Blue">Prior and Partial Shipments to be allowed</font></strong> <br/><br/>
+							
+								{!quote.Additional_Information__c}
+								
+							</td>
+							<td class="style15">
+							
+							</td>
+							<td>
+								<br/><br/>
+								{!quote.Opportunity.Total_Price__c}<br/>
+								{!quote.Opportunity.Packing__c}<br/><br/>
+								{!quote.Opportunity.Packing__c}<br/>
+								{!quote.Opportunity.Cart_Forwarding__c}<br/><br/>
+								{!quote.Opportunity.Packing__c}<br/><br/>
+								<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+							</td>
+						</tr>
+                        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td class="style16">
+                                footer section A</td>
+                            <td>
+                                footer section B</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+		</html>
+</apex:page>

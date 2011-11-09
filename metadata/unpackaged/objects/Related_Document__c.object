@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object used to create hyperlinks to supporting documents related to the opportunity that are located on the internal network. Users must have access to the respective network directories to view the hyperlink target.</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Related Documents</relationshipLabel>
+        <relationshipName>R00N300000011VpMEAU</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Click_to_View__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;file://&quot; &amp;  Network_Path__c , &quot;View&quot;)</formula>
+        <label>Click to View</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Related Documents</relationshipLabel>
+        <relationshipName>R00N300000011Vx0EAE</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Network_Path__c</fullName>
+        <description>Text field for entering a path to a network folder or document. Use the following syntax:
+For MS-Windows:    \\servername\folder\subfolder\...\filename.ext
+For Unix:    servername/folder/subfolder/.../filename</description>
+        <externalId>false</externalId>
+        <label>Network Path</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Related Documents</relationshipLabel>
+        <relationshipName>R00N300000011FhVEAU</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <label>Related Document</label>
+    <nameField>
+        <label>Related Document Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Related Documents</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Network_Path__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Click_to_View__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

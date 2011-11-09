@@ -1,0 +1,3 @@
+{!Opportunity.LastModifiedBy} has modified {!Opportunity.Division__c} opportunity {!Opportunity.Name} [{!Opportunity.Link}] with the following forecast issue:
+
+{!Opportunity.Forecast_Comments__c}

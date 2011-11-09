@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Exchange Rates</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Exchange Rates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buying Exchange Rate --></label>
+        <name>Buying_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBI</masterLabel>
+            <translation><!-- GBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USI</masterLabel>
+            <translation><!-- USI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Domestic Currency --></label>
+        <name>Domestic_Currency__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBI</masterLabel>
+            <translation><!-- GBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USI</masterLabel>
+            <translation><!-- USI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate GBP --></label>
+        <name>Exchange_Rate_GBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate USD --></label>
+        <name>Exchange_Rate_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selling Exchange Rate --></label>
+        <name>Selling_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Syteline User Initials --></label>
+        <name>Syteline_User_Initials__c</name>
+    </fields>
+    <layouts>
+        <layout>Exchange Rates Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

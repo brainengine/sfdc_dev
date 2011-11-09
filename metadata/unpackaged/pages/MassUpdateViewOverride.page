@@ -1,0 +1,5 @@
+<apex:page standardController="Mass_Update__c">
+<script type="text/javascript">
+	top.location='/apex/MassUpdateAnything?id={!Mass_Update__c.Id}';
+</script>
+</apex:page>

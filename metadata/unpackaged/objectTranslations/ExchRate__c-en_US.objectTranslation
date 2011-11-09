@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ExchRate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ExchRate</value>
+    </caseValues>
+    <fields>
+        <label><!-- Created --></label>
+        <name>Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Id --></label>
+        <name>DocumentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExchRateDate --></label>
+        <name>ExchRateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExchRateGBP --></label>
+        <name>ExchRateGBP__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExchRateUSD --></label>
+        <name>ExchRateUSD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last modified --></label>
+        <name>LastModified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes Files --></label>
+        <name>NotesFiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- REF --></label>
+        <name>REF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replica Id --></label>
+        <name>ReplicaId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SectionExchRate --></label>
+        <name>SectionExchRate__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

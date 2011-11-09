@@ -1,0 +1,3 @@
+{!Opportunity.RecordType}: {!Opportunity.Name} has been entered an locked
+
+{!Opportunity.Id}

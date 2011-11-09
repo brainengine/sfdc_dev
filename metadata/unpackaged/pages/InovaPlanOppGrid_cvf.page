@@ -1,0 +1,82 @@
+<apex:page standardController="Opportunity" extensions="InovaPlanOppGridController" tabstyle="Inova_Plan_Opp_Grid__tab"  sidebar="false">
+    <apex:stylesheet value="{!$Resource.GridsCSS}" />
+    <apex:sectionHeader title="Update Plan Opportunities" />
+    <apex:form >
+        <apex:outputLabel for="theContractDate">Revenue Date</apex:outputLabel>
+        <apex:outputLabel >&nbsp;</apex:outputLabel>
+        <apex:selectList id="theContractDate" value="{!selectedContractDate}" size="1" >
+             <apex:selectoptions value="{!contractdate}"></apex:selectoptions>
+         </apex:selectList>
+         <apex:outputLabel >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputLabel> 
+        <apex:outputLabel for="theRegion">Region</apex:outputLabel>
+        <apex:outputLabel >&nbsp;</apex:outputLabel>
+        <apex:selectList id="theRegion" value="{!selectedRegion}" size="1" >
+             <apex:selectoptions value="{!region}"></apex:selectoptions>
+         </apex:selectList>
+         <apex:outputLabel >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputLabel> 
+         <apex:outputLabel for="theProducts1">Product Group</apex:outputLabel>
+        <apex:outputLabel >&nbsp;</apex:outputLabel>
+        <apex:selectList id="theProducts1" value="{!selectedProductGroup1}" size="1" >
+             <apex:selectoptions value="{!productgroup1}"></apex:selectoptions>
+         </apex:selectList> 
+        <apex:outputLabel >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputLabel>
+         
+        <apex:outputLabel >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</apex:outputLabel>
+        <apex:commandButton value="Find" action="{!Find}" rerender="block" status="status"/><br/><br/>
+        <apex:outputLabel >Select a view from the drop-down lists above to see a list of opportunities. Select a cell to edit the data in the cell. 
+        Click Save to save edited data in Salesforce.Click Discard Changes to discard any edited data and replace it with the data currently 
+        in Salesforce.com. </apex:outputLabel>
+        <br/>
+        <apex:pageBlock mode="edit" id="block">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!save}" value="Save Records" />
+            <apex:commandButton action="{!discard}" value="Discard Changes"/>
+            <apex:commandButton action="{!cancel}" value="Cancel"/>
+        </apex:pageBlockButtons>
+        <apex:pageMessages /> 
+        <apex:variable var="call" value="{!0}"  />
+        <apex:repeat var="countitall" value="{!searchResults}"  >
+            <apex:variable var="call" value="{!call+1}" />
+        </apex:repeat> 
+        <apex:outputText value="{!stringquery}" />
+        <br/><br/>
+        <apex:actionStatus id="status" startText="Searching... please wait..." stopText="Records Found: {!Round(call,0) } "/>
+        <apex:pageBlockSection title="Search Results - System Limited to 1000 Records" id="resultsBlock" columns="1">
+            <apex:pageBlockTable value="{!searchResults}" var="item" rendered="{!NOT(ISNULL(searchResults))}">
+               <div>
+                   <!-- <apex:column value="{!item.AccountId}" headerValue="Customer" width="150" style="font-size:10px"/>  -->
+                    <apex:column value="{!item.Name}" headerValue="Name" width="200" style="font-size:10px" />
+                    <apex:column headerValue="Forecast Group">
+                    	<apex:selectList id="ForecastGroup" value="{!item.Forecast_Group__c}" size="1" onchange="this.style.backgroundColor='yellow'" styleClass="dropdownlist">
+                        	<apex:selectoptions value="{!forecastgroup}" /> 
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerValue="Product Group">
+                    	<apex:selectList id="ProductGroup" value="{!item.Product_Group__c}" size="1" onchange="this.style.backgroundColor='yellow'" styleClass="dropdownlist">
+                        	<apex:selectoptions value="{!productgroup2}" /> 
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerValue="Territory">
+                    	<apex:selectList id="Territory" value="{!item.Sales_Territory__c}" size="1" onchange="this.style.backgroundColor='yellow'" styleClass="dropdownlist">
+                        	<apex:selectoptions value="{!salesterritory}" /> 
+                        </apex:selectList>
+                    </apex:column>
+                    <apex:column headerValue="Revenue"  >
+                        <apex:inputField value="{!item.Revenue__c}" onchange="this.style.backgroundColor='yellow'" styleClass="money" />
+                    </apex:column>
+                    <apex:column headerValue="Margin"  >
+                        <apex:inputField value="{!item.Sales_Margin__c}" onchange="this.style.backgroundColor='yellow'" styleClass="money" />
+                    </apex:column>
+                    <apex:column headerValue="Revenue Date"   >
+                        <apex:inputField value="{!item.CloseDate}" onchange="this.style.backgroundColor='yellow'" styleClass="dateFormat" styleClass="dates" />
+                    </apex:column>
+                    <apex:column headerValue="Status" >
+                       <apex:inputField value="{!item.Opportunity_Issues__c}" onchange="this.style.backgroundColor='yellow'" styleClass="comments" style="width:250px"/> 
+                    </apex:column>
+                   <!-- <apex:column value="{!item.OwnerId}" headerValue="Owner"/> -->
+                </div>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

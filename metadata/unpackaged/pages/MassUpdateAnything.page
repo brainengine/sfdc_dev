@@ -1,0 +1,209 @@
+<apex:page standardcontroller="Mass_Update__c" extensions="MassUpdateAnyController" action="{!init}">
+
+	<apex:form id="theForm">
+		<apex:pageblock id="step1" title="Select Object to Update" rendered="{!massUpdate.Id ==null}">
+			<apex:selectList value="{!selObject}" multiselect="false" size="10" disabled="{!massUpdate.Id !=null}">
+				<apex:selectOptions value="{!objectList}" />
+			</apex:selectList>
+			<br />
+			<apex:commandButton value="Next" action="{!selectFields}" disabled="{!massUpdate.Id !=null}"/>
+		</apex:pageblock>
+		 <apex:detail id="theDetail" subject="{!massUpdate.Id}" relatedList="false" title="true" rendered="{!massUpdate.Id !=null}"/> 
+		<apex:pageMessages id="errMsgs"/>
+		<apex:pageblock id="step2" title="Add Fields to Update"
+			rendered="{!currentStep >=2}">
+			<apex:pageBlockTable value="{!fldList}" var="fld"
+				rendered="{!fldListSize > 0}">
+				<apex:column headerValue="Del">
+					<apex:inputCheckBox value="{!fld.IsDeleted}"/>
+				</apex:column>
+				<apex:column headerValue="API Name" value="{!fld.Field_API_Name__c}" />
+				<apex:column headerValue="Blank / Empty / Null">
+					<apex:outputField value="{!fld.Empty__c}"/>
+				</apex:column>
+				<apex:column headerValue="Value">
+					<apex:outputField value="{!fld.Field_Value__c}"/>
+					<apex:outputField value="{!fld.Field_Value_Date__c}"/>
+					<apex:outputField value="{!fld.Field_Value_Datetime__c}"/>
+					<apex:outputField value="{!fld.Field_Value_Nbr__c}"/>
+					<apex:outputField value="{!fld.Field_Value_CBox__c}"/>
+					<apex:outputField value="{!fld.Field_Value_Txt_Area__c}"/>
+					<apex:outputField value="{!fld.User__c}"/>
+				</apex:column>
+			</apex:pageBlockTable>
+			<br/><br/>
+			<apex:actionRegion >
+				<apex:pageBlockTable value="{!currFieldList}" var="currFld">
+					<apex:column headerValue="Field To Update">
+						<apex:selectList value="{!fldToUpdate}" multiselect="false"
+							size="5">
+							<apex:actionSupport event="onchange" action="{!selectField}"
+								rerender="thFldValue" />
+							<apex:selectOptions value="{!fieldList}" />
+						</apex:selectList>
+					</apex:column>
+					<apex:column headerValue="Blank / Empty / Null">
+						<apex:inputField value="{!currFld.Empty__c}"/>
+					</apex:column>
+					<apex:column headerValue="Field Value">
+						<apex:outputPanel id="thFldValue">
+							<apex:inputField value="{!currFld.Field_Value__c}"
+								rendered="{!textField}" />
+							<apex:selectList value="{!fieldValue}"
+								size="5"
+								rendered="{!AND(picklistField,NOT(multiSelect))}">
+								<apex:selectOptions value="{!fieldValues}" />
+							</apex:selectList>
+							<apex:selectList value="{!fieldValueList}"
+								size="5" multiSelect="true"
+								rendered="{!AND(picklistField,multiSelect)}">
+								<apex:selectOptions value="{!fieldValues}" />
+							</apex:selectList>
+							<div style="display:{!IF(dateField,'inline','none')}">
+								<apex:inputField value="{!currFld.Field_Value_Date__c}"/>
+							</div>
+							<div style="display:{!IF(dateTimeField,'inline','none')}">
+								<apex:inputField value="{!currFld.Field_Value_Datetime__c}"/>
+							</div>
+							<apex:inputField value="{!currFld.Field_Value_Nbr__c}"
+								rendered="{!nbrField}" />
+							<apex:inputField value="{!currFld.User__c}"
+								rendered="{!userLookup}" />
+							<apex:inputField value="{!currFld.Field_Value_CBox__c}" 
+								rendered="{!cboxField}"/>								
+							<apex:inputField value="{!currFld.Field_Value_Txt_Area__c}" 
+								rendered="{!txtAreaField}"/>								
+						</apex:outputPanel>
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:actionRegion>
+			<apex:commandButton value="Add Field" action="{!addField}"
+				rerender="errMsgs,step2,step3" />
+			<apex:commandButton value="Delete Selected Fields" action="{!deleteSelected}"
+				rerender="errMsgs,step2,step3" rendered="{!fldListSize >0}"/>
+
+		</apex:pageblock>
+
+		<apex:pageblock id="step3" title="Add Filter Criteria"
+			rendered="{!currentStep >=2}">
+
+			<apex:pageBlockTable value="{!filterCriteria}" var="criteria"
+				rendered="{!filtersSize > 0}">
+				<apex:column headerValue="Del">
+					<apex:inputCheckBox value="{!criteria.IsDeleted}"/>
+				</apex:column>
+				<apex:column headerValue="API Name"
+					value="{!criteria.Field_API_Name__c}" />
+				<apex:column headerValue="Operator" value="{!criteria.Operator__c}" />
+
+				<apex:column headerValue="Blank / Empty / Null">
+					<apex:outputField value="{!criteria.Empty__c}"/>
+				</apex:column>
+				<apex:column headerValue="Filter Value">
+					<apex:outputField value="{!criteria.Filter_Value__c}"/>
+					<apex:outputField value="{!criteria.Filter_Value_Date__c}"/>
+					<apex:outputField value="{!criteria.Filter_Value_Date_Time__c}"/>
+					<apex:outputField value="{!criteria.Filter_Value_Nbr__c}"/>
+					<apex:outputField value="{!criteria.Filter_Value_CBox__c}" />
+					<apex:outputField value="{!criteria.User__c}"/>
+				</apex:column>
+
+			</apex:pageBlockTable>
+			<br/><br/>
+			<apex:actionRegion >
+			<apex:pageBlockTable value="{!currCritList}" var="criteria">
+				<apex:column headerValue="Criteria Field">
+					<apex:selectList value="{!selFldForCrit}" multiselect="false"
+						size="5">
+						<apex:actionSupport event="onchange" action="{!selectCriteriaField}"
+								rerender="theCritFldValue" />
+						<apex:selectOptions value="{!criteriaFieldList}" />
+					</apex:selectList>
+				</apex:column>
+				<apex:column headerValue="Operator">
+					<apex:selectList value="{!criteria.Operator__c}" multiselect="false" size="1" >
+								<apex:actionSupport event="onchange" action="{!selectCriteriaField}"
+										rerender="theCritFldValue" />
+								<apex:selectOptions value="{!operators}"/>
+					</apex:selectList>
+				</apex:column>
+					<apex:column headerValue="Is Empty ?">
+						<apex:inputField value="{!criteria.Empty__c}"/>
+					</apex:column>
+				<apex:column headerValue="Value">
+					<apex:outputPanel id="theCritFldValue">
+						<apex:selectList value="{!critValue}"
+							multiselect="false" size="5"
+							rendered="{!AND(critPicklistField,NOT(critMultiSelect))}">
+							<apex:selectOptions value="{!fieldValues}" />
+						</apex:selectList>					
+						<apex:selectList value="{!critValueList}"
+							size="5" multiSelect="true"
+							rendered="{!AND(critPicklistField,critMultiSelect)}">
+							<apex:selectOptions value="{!fieldValues}" />
+						</apex:selectList>
+						
+						<apex:inputField value="{!criteria.Filter_Value__c}" 
+								rendered="{!critTextField}"/>
+						<apex:inputField value="{!criteria.Filter_Value_Date__c}" 
+								style="display:{!IF(critDateField,'inline','none')}" 
+								rendered="{!critDateField}"/>
+						<apex:inputField value="{!criteria.Filter_Value_Date_Time__c}" 
+								style="display:{!IF(critDateTimeField,'inline','none')}" 
+								rendered="{!critDateTimeField}"/>
+						<apex:inputField value="{!criteria.Filter_Value_Nbr__c}" rendered="{!critNbrField}"/>
+						<apex:inputField value="{!criteria.Filter_Value_CBox__c}" 
+							rendered="{!critCboxField}"/>
+						<apex:outputText value="Text area fields cannot be used in Filter Criteria !!!" 
+							rendered="{!critTxtAreaField}"/>
+						<apex:inputField value="{!criteria.User__c}" rendered="{!critUsrLookup}" />
+					</apex:outputPanel>
+				</apex:column>
+			</apex:pageBlockTable>
+			</apex:actionRegion>
+			<apex:commandButton value="Add Criteria" action="{!addCriteria}"
+				rerender="errMsgs,step3" disabled="{!critTxtAreaField}"/>
+			<apex:commandButton value="Delete Selected Criteria	" action="{!deleteSelCriteria}"
+				rerender="errMsgs,step3" rendered="{!filtersSize >0}"/>
+				
+			<apex:commandButton value="Save" action="{!save}" rendered="{!fldListSize > 0}" 
+				rerender="step1,theDetail,step2,step3" />
+			<apex:commandButton value="Show SOQL" action="{!showSoql}"
+				rerender="Debug" rendered="{!fldListSize > 0}"/>
+			<apex:commandButton value="Show Sample Data" action="{!showSampleRecords}" 
+				rendered="{!fldListSize > 0}"/>
+			<apex:commandButton value="Show Record Counts" action="{!getRecordCount}"
+				rerender="Debug" rendered="{!OR(fldListSize > 0,filtersSize > 0)}"/>
+			<apex:commandButton value="Test Update (1 Record)" action="{!testUpdate}"
+				rerender="Debug" rendered="{!fldListSize > 0}"/>
+
+			<apex:commandButton value="Update" action="{!runUpdate}"
+				rerender="Debug" rendered="{!fldListSize > 0}"/>
+		</apex:pageblock>
+		<apex:pageBlock id="SampleData" title="Sample Records" rendered="{!LEN(sampleData)>0}">
+			<c:DataTable jsondata="{!sampleData}"/>
+		</apex:pageBlock>
+		<apex:pageblock id="Debug" title="Debug" rendered="{!currentStep >=2}">
+
+Selected Object  : <apex:outputText value="{!selObject}" />
+			<br />
+Fields to Update : <br />
+			<apex:dataList value="{!fldList}" var="fld" id="theDebugList">
+				<apex:outputText value="{!fld.Field_API_Name__c}" />
+			</apex:dataList>
+Filter Criteria  : <br />
+			<apex:dataList value="{!filterCriteria}" var="crit"
+				id="theDebugCriteria">
+				<apex:outputText value="{!crit.Field_API_Name__c}" />&nbsp;<apex:outputText value="{!crit.Operator__c}" />&nbsp;<apex:outputText value="{!crit.Filter_Value__c}" />
+			</apex:dataList>
+
+SOQL Query:<br />
+			<apex:outputText value="{!soql}" /><br/>
+Record Count:<br />
+			<apex:outputText value="{!recCount}" /><br/>
+Test Update Status:<br />
+			<apex:outputText value="{!testMsg}" />
+		</apex:pageblock>
+	</apex:form>
+
+</apex:page>

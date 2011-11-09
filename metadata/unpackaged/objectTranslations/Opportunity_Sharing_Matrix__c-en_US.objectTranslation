@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Sharing Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Sharing Matrices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access --></label>
+        <name>Access__c</name>
+        <picklistValues>
+            <masterLabel>Read Only</masterLabel>
+            <translation><!-- Read Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read/Write</masterLabel>
+            <translation><!-- Read/Write --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Entity --></label>
+        <name>Business_Entity__c</name>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Group --></label>
+        <name>Business_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>CSL</masterLabel>
+            <translation><!-- CSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LISD</masterLabel>
+            <translation><!-- LISD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSBU</masterLabel>
+            <translation><!-- LSBU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISD</masterLabel>
+            <translation><!-- MISD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Lease/Rental</masterLabel>
+            <translation><!-- Lease/Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Project</masterLabel>
+            <translation><!-- New Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Purchase</masterLabel>
+            <translation><!-- New Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair</masterLabel>
+            <translation><!-- Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell Up</masterLabel>
+            <translation><!-- Sell Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spares/Replacement</masterLabel>
+            <translation><!-- Spares/Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actual</masterLabel>
+            <translation><!-- Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation><!-- Forecast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>Role_Access__c</name>
+        <picklistValues>
+            <masterLabel>Africa Management</masterLabel>
+            <translation><!-- Africa Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Africa Sales</masterLabel>
+            <translation><!-- Africa Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSL Sales</masterLabel>
+            <translation><!-- CSL Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSL Sales Management</masterLabel>
+            <translation><!-- CSL Sales Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada Management</masterLabel>
+            <translation><!-- Canada Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada Sales</masterLabel>
+            <translation><!-- Canada Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China Management</masterLabel>
+            <translation><!-- China Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China Sales</masterLabel>
+            <translation><!-- China Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe Management</masterLabel>
+            <translation><!-- Europe Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe Sales</masterLabel>
+            <translation><!-- Europe Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISC Management</masterLabel>
+            <translation><!-- ISC Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISC Sales</masterLabel>
+            <translation><!-- ISC Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LISD Sales</masterLabel>
+            <translation><!-- LISD Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LISD Sales Management</masterLabel>
+            <translation><!-- LISD Sales Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSBU Sales</masterLabel>
+            <translation><!-- LSBU Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSBU Sales Management</masterLabel>
+            <translation><!-- LSBU Sales Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME Management</masterLabel>
+            <translation><!-- ME Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME Sales</masterLabel>
+            <translation><!-- ME Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISD Sales</masterLabel>
+            <translation><!-- MISD Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISD Sales Management</masterLabel>
+            <translation><!-- MISD Sales Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia Management</masterLabel>
+            <translation><!-- Russia Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia Sales</masterLabel>
+            <translation><!-- Russia Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Management</masterLabel>
+            <translation><!-- SA Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Sales</masterLabel>
+            <translation><!-- SA Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA Management</masterLabel>
+            <translation><!-- USA Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA Sales</masterLabel>
+            <translation><!-- USA Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Territory --></label>
+        <name>Sales_Territory__c</name>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China/Asia Pacific</masterLabel>
+            <translation><!-- China/Asia Pacific --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISC</masterLabel>
+            <translation><!-- ISC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle East</masterLabel>
+            <translation><!-- Middle East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia/CIS</masterLabel>
+            <translation><!-- Russia/CIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South America</masterLabel>
+            <translation><!-- South America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA/Mexico</masterLabel>
+            <translation><!-- USA/Mexico --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage Name --></label>
+        <name>Stage_Name__c</name>
+        <picklistValues>
+            <masterLabel>1 - Lead Generation and Management</masterLabel>
+            <translation><!-- 1 - Lead Generation and Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.) Research</masterLabel>
+            <translation><!-- 1.) Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Opportunity Assessment</masterLabel>
+            <translation><!-- 2 - Opportunity Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.) Qualified</masterLabel>
+            <translation><!-- 2.) Qualified --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Opportunity Sharing Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,3 @@
+{!Opportunity.OwnerFullName} has removed {!Opportunity.Account}'s {!Opportunity.Name} opportunity from the {!Opportunity.Division__c} forecast.
+
+Select {!Opportunity.Link} to view the opportunity in SFDC.

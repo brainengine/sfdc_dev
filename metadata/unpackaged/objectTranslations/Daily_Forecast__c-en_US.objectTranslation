@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Daily Forecast</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Daily Forecasts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Site --></label>
+        <name>Account_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- BU Close Date --></label>
+        <name>BU_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BU Closing Month --></label>
+        <name>BU_Closing_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- BU Margin --></label>
+        <name>BU_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- BU Revenue --></label>
+        <name>BU_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Entity --></label>
+        <name>Business_Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Month --></label>
+        <name>Close_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day --></label>
+        <name>Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Group --></label>
+        <name>Forecast_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod Group BU --></label>
+        <name>Prod_Group_BU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>I/O Entity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>I/O Entities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Manager --></label>
+        <name>Account_Manager__c</name>
+        <relationshipLabel><!-- I/O Entities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- I/O Entities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>CSL</masterLabel>
+            <translation><!-- CSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LISD</masterLabel>
+            <translation><!-- LISD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSBU</masterLabel>
+            <translation><!-- LSBU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISD</masterLabel>
+            <translation><!-- MISD --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotations</value>
+    </caseValues>
+    <fields>
+        <help><!-- This is the account on the quote that is passed back to the BigMachines Object when a quote in synced to Salesforce.com --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>BIGM_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Terms --></label>
+        <name>BIGM_Delivery_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>BIGM_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>BIGM_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total EXW Revenue --></label>
+        <name>BIGM_Exw_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- INCO Destination --></label>
+        <name>BIGM_INCO_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- INCO Terms --></label>
+        <name>BIGM_INCO_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id --></label>
+        <name>BIGM_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Margin --></label>
+        <name>BIGM_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>BIGM_Opportunity__c</name>
+        <relationshipLabel><!-- BigMachines Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Delivery Terms --></label>
+        <name>BIGM_Other_Delivery_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Payment Terms --></label>
+        <name>BIGM_Other_Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>BIGM_Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>BIGM_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>BIGM_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>BIGM_Total_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>BIGM_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This increments each time a new revision is created for a quote by hitting the revision button in BigMachines --></help>
+        <label><!-- Revision --></label>
+        <name>Revision__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information2 --></label>
+            <section>Information2</section>
+        </sections>
+        <sections>
+            <label><!-- Quote --></label>
+            <section>Quote</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Edit_Quote --></label>
+        <name>Edit_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Primary --></label>
+        <name>New_Primary</name>
+    </webLinks>
+</CustomObjectTranslation>

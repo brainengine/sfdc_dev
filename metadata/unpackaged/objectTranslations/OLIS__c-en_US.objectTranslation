@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OLIS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OLIS</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Period --></label>
+        <name>Installment_Period__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Installments --></label>
+        <name>Number_of_Installments__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLI Id --></label>
+        <name>OLI_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- OLIS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- OLIS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Re-Calculate Installment Amount --></label>
+        <name>Re_Calculate_Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reportable --></label>
+        <name>Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Type --></label>
+        <name>Schedule_Type__c</name>
+        <picklistValues>
+            <masterLabel>Divide Amount into multiple installments</masterLabel>
+            <translation><!-- Divide Amount into multiple installments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repeat Amount for each installment</masterLabel>
+            <translation><!-- Repeat Amount for each installment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Product Margin --></label>
+        <name>Total_Product_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <layouts>
+        <layout>OLIS Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Line Item Information --></label>
+            <section>Product Line Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Schedule Information --></label>
+            <section>Schedule Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mass Update Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mass Update Test</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Mass Update Test --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fld Checkbox --></label>
+        <name>Fld_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Currency --></label>
+        <name>Fld_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Date --></label>
+        <name>Fld_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Datetime --></label>
+        <name>Fld_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Email --></label>
+        <name>Fld_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Number --></label>
+        <name>Fld_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Percent --></label>
+        <name>Fld_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Phone --></label>
+        <name>Fld_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Picklist Multi --></label>
+        <name>Fld_Picklist_Multi__c</name>
+        <picklistValues>
+            <masterLabel>MValue 1</masterLabel>
+            <translation><!-- MValue 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MValue 2</masterLabel>
+            <translation><!-- MValue 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MValue 3</masterLabel>
+            <translation><!-- MValue 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fld Picklist Single --></label>
+        <name>Fld_Picklist_Single__c</name>
+        <picklistValues>
+            <masterLabel>Value 1</masterLabel>
+            <translation><!-- Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 2</masterLabel>
+            <translation><!-- Value 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 3</masterLabel>
+            <translation><!-- Value 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fld TextArea Long --></label>
+        <name>Fld_TextArea_Long__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld TextArea --></label>
+        <name>Fld_TextArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Text --></label>
+        <name>Fld_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fld Url --></label>
+        <name>Fld_Url__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

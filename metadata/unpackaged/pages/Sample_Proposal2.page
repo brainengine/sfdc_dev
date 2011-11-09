@@ -1,0 +1,336 @@
+<apex:page standardController="Quote"  showHeader="false">
+	<apex:form >
+		<style type="text/css">
+			.style1
+			{
+			width: 100%;
+			}
+			.style2
+			{
+			width: 638px;
+			}
+			.style3
+			{
+			width: 554px;
+			text-align: left;
+			}
+			.style4
+			{
+			width: 554px;
+			text-align: left;
+			height: 19px;
+			}
+			.style5
+			{
+			height: 19px;
+			}
+			.style7
+			{
+			width: 139px;
+			}
+			.style8
+			{
+			width: 211px;
+			}
+			.style10
+			{
+			width: 151px;
+			}
+			.style11
+			{
+			width: 905px;
+			}
+			.style12
+			{
+			width: 158px;
+			}
+			.style13
+			{
+			text-align: center;
+			}
+			.style14
+			{
+			width: 151px;
+			text-align: center;
+			}
+			.style15
+			{
+			width: 905px;
+			text-align: center;
+			}
+			.style16
+			{
+			width: 211px;
+			text-align: center;
+			}
+			.style17
+			{
+			width: 139px;
+			text-align: center;
+			}
+			.style18
+			{
+			width: 158px;
+			text-align: center;
+			}
+			.style19
+			{
+			width: 705px;
+			}
+			.style20
+			{
+			width: 705px;
+			height: 23px;
+			}
+			.style21
+			{
+			height: 23px;
+			}
+			.style24
+			{
+			width: 638px;
+			height: 23px;
+			}
+			.style25
+			{
+			width: 374px;
+			}
+			.style26
+			{
+			height: 23px;
+			width: 374px;
+			}
+			.style27
+			{
+			width: 333px;
+			}
+			.style28
+			{
+			height: 23px;
+			width: 333px;
+			}
+			.style29
+			{
+			width: 638px;
+			height: 23px;
+			text-align: center;
+			}
+		</style>
+		<table class="style1">
+			<tr>
+				<td class="style29">
+				PROPOSAL</td>
+			</tr>
+		</table>
+		<table class="style1">
+			<tr>
+				<td class="style24">
+				&lt;IMAGE&gt;</td>
+				<td class="style21">
+				&lt;LOGO&gt;</td>
+			</tr>
+			<tr>
+				<td class="style2">
+					<table class="style1">
+						<tr>
+							<td class="style27">
+							&nbsp;</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style27">
+							number</td>
+							<td>
+							{!quote.Opportunity.Name}</td>
+						</tr>
+						<tr>
+							<td class="style27">
+							date</td>
+							<td>
+							{!quote.Opportunity.CreatedDate}</td>
+						</tr>
+						<tr>
+							<td class="style27">
+							your ref</td>
+							<td>
+							{!quote.Opportunity.Client_Order_No__c}</td>
+						</tr>
+						<tr>
+							<td class="style28">
+							contact</td>
+							<td class="style21">
+							{!quote.Opportunity.Owner.Name}</td>
+						</tr>
+						<tr>
+							<td class="style28">
+							date shipped</td>
+							<td class="style21">
+							N/A</td>
+						</tr>
+						<tr>
+							<td class="style27">
+							shipped via</td>
+							<td>
+							N/A</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table class="style1">
+						<tr>
+							<td class="style25">
+							&nbsp;</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style25">
+							number</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style25">
+							date</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style25">
+							your ref</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style26">
+							contact</td>
+							<td class="style21">
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style26">
+							date shipped</td>
+							<td class="style21">
+							&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="style25">
+							shipped via</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="style1">
+			<tr>
+				<td>
+				yy</td>
+			</tr>
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" class="style1">
+						<tr>
+							<td class="style3">
+							Ship To</td>
+							<td>
+							Ship To</td>
+						</tr>
+						<tr>
+							<td class="style3">
+							Account Name</td>
+							<td>
+							Accnt Shipping Address Block</td>
+						</tr>
+						<tr>
+							<td class="style3">
+							Account Physical Address Book</td>
+							<td>
+							ATTN: Oppty Ship To Contact Full Name</td>
+						</tr>
+						<tr>
+							<td class="style4">
+							ATTN: Oppty PrimaryContact</td>
+							<td class="style5">
+							ShipToContact Phone</td>
+						</tr>
+						<tr>
+							<td class="style3">
+							&nbsp;</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="style1">
+						<tr>
+							<td class="style18">
+							ITEM NO:</td>
+							<td class="style17">
+							QUANTITY</td>
+							<td class="style16">
+							PART NO.</td>
+							<td class="style15">
+							DESCRIPTION</td>
+							<td class="style14">
+							UNIT PRICE USD</td>
+							<td class="style13">
+							TOTAL PRICE USD</td>
+						</tr>
+						<tr>
+							<td class="style12">
+							&nbsp;</td>
+							<td class="style7">
+							&nbsp;</td>
+							<td class="style8">
+							&nbsp;</td>
+							<td class="style11">
+							REGRGERG</td>
+							<td class="style10">
+							&nbsp;</td>
+							<td>
+							&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="style1">
+						<tr>
+							<td class="style19">
+							TERMS:</td>
+							<td>
+							BY:</td>
+						</tr>
+						<tr>
+							<td class="style20">
+							subject to terms ..........</td>
+							<td class="style21">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="style1">
+			<tr>
+				<td class="style13">
+				registerd at he chamber.......</td>
+			</tr>
+		</table>
+	</apex:form>
+</apex:page>

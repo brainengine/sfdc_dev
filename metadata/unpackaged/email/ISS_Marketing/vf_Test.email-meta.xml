@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>21.0</apiVersion>
+    <available>false</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>vf_Test</name>
+    <style>none</style>
+    <subject>Testing</subject>
+    <type>visualforce</type>
+</EmailTemplate>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;IMG id=spsPageTitleIcon alt=&quot;&quot; src=&quot;http://ioconnect/_layouts/images/ionLogo2.gif&quot;&gt;&amp;nbsp;</body>
+    <pageComponentType>imageOrNote</pageComponentType>
+</HomePageComponent>

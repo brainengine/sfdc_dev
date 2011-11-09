@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mass Update Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mass Update Fields</value>
+    </caseValues>
+    <fields>
+        <label><!-- Empty --></label>
+        <name>Empty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field API Name --></label>
+        <name>Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value CBox --></label>
+        <name>Field_Value_CBox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value Date --></label>
+        <name>Field_Value_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value Datetime --></label>
+        <name>Field_Value_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value Nbr --></label>
+        <name>Field_Value_Nbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value Txt Area --></label>
+        <name>Field_Value_Txt_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Value --></label>
+        <name>Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mass Update --></label>
+        <name>Mass_Update__c</name>
+        <relationshipLabel><!-- Mass Update Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Mass Update Fields --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

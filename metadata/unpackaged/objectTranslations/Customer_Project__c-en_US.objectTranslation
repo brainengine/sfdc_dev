@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Account --></label>
+        <name>Client_Account__c</name>
+        <relationshipLabel><!-- Customer Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Field of Play --></label>
+        <name>Field_of_Play__c</name>
+        <picklistValues>
+            <masterLabel>Deep Well Oil</masterLabel>
+            <translation><!-- Deep Well Oil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unconventional Gas</masterLabel>
+            <translation><!-- Unconventional Gas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Budget --></label>
+        <name>Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
