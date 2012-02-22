@@ -1,5 +1,0 @@
-The following SFDC opportunity has been created for {!Opportunity.Account} by {!Opportunity.OwnerFullName}:
-
-{!Opportunity.Name}
-
-{!Opportunity.Link}
